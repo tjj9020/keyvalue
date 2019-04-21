@@ -1,5 +1,5 @@
 defmodule KV.Registry do
-  Use GenServer
+  use GenServer
 
   #Client
 

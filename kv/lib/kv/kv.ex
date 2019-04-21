@@ -14,6 +14,6 @@ defmodule KV.Bucket do
     end
 
     def delete(bucket, key) do
-        Agent.get_and_update(bucket, fn dict -> Map.pop(dict, key))
+        Agent.get_and_update(bucket, fn dict -> Map.pop(dict, key) end)
     end
 end
